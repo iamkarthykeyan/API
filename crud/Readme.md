@@ -7,3 +7,5 @@
 ### 3. GET /items/:id - Get item by id
 ### 4. PUT /items/:id - Update item by id
 ### 5. POST /items/:id - Delete item by id
+
+mongodb+srv://jkarthikeyandev:<db_password>@cluster0.4cwpb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

@@ -1,25 +1,18 @@
 import express from "express";
+import { ItemCreate, ItemDelete, ItemIndex, ItemUpdate } from "../controllers/items.controller.js";
 
 const router = express.Router();
 
 // READ
-router.get('/', (req,res) => {
-    res.send("I am read");
-});
+router.get('/', ItemIndex);
 
 // CREATE
-router.post('/', (req,res) => {
-    res.send("I am read");
-});
+router.post('/', ItemCreate);
 
 // UPDATE
-router.put('/:id', (req,res) => {
-    res.send("I am read");
-});
+router.put('/:id', ItemUpdate);
 
 // DELETE
-router.delete('/:id', (req,res) => {
-    res.send("I am read");
-});
+router.delete('/:id', ItemDelete);
 
 export default router;

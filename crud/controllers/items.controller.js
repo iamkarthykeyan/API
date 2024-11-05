@@ -3,7 +3,8 @@ export const ItemIndex = (req, res)=>{
 };
 
 export const ItemCreate = (req,res) =>{
-     res.send("Created a item");
+    console.log(req.body);
+    return res.json(req.body);
 };
 
 export const ItemUpdate = (res,req)=>{

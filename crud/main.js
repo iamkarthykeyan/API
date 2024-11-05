@@ -10,6 +10,10 @@ app.get("/", (req, res) => {
 });
 
 // MIDDLEWARES 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// CRUD
 app.use("/items", itemRoutes);
 
 // Connect to the database
